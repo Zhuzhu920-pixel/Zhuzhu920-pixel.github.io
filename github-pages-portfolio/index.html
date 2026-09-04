@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>祝潇灵的 AI 作品展</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="exhibit-page">
+    <div class="scene-wrap" id="scene">
+      <img class="scene-image" src="assets/studio-exhibit-v5.png" alt="祝潇灵的 AI 作品展板" />
+      <div class="scene-shade"></div>
+      <div class="scene-title"><span>PERSONAL STUDIO / 2026</span><strong>祝潇灵的<br /><i>AI 作品展</i></strong><small>点击桌面上的东西，慢慢认识我。</small></div>
+      <div class="scene-tip">HOVER / CLICK TO EXPLORE</div>
+      <button class="hotspot h-about" data-piece="identity" aria-label="打开个人介绍"><span>关于我</span></button>
+      <button class="hotspot h-manual" data-piece="manual" aria-label="打开个人说明书"><span>个人说明书</span></button>
+      <button class="hotspot h-team" data-piece="team" aria-label="打开小组共创会"><span>小组共创</span></button>
+      <button class="hotspot h-research" data-piece="research" aria-label="打开用户调研"><span>用户调研</span></button>
+      <button class="hotspot h-xhs" data-piece="xiaohongshu" aria-label="打开小红书图文"><span>小红书图文</span></button>
+      <button class="hotspot h-website" data-piece="website" aria-label="打开行动合伙人体验网站"><span>行动合伙人网站</span></button>
+      <button class="hotspot h-interview" data-piece="interview" aria-label="打开面试官 PPT"><span>面试官 PPT</span></button>
+      <button class="hotspot h-skill" data-piece="skill" aria-label="打开岗位分析 Skill"><span>岗位 Skill</span></button>
+      <button class="hotspot h-notebook" data-piece="reflection" aria-label="打开复盘笔记"><span>复盘笔记</span></button>
+      <button class="hotspot h-phone" data-piece="contact" aria-label="打开联系方式"><span>给我留个消息</span></button>
+      <button class="hotspot h-fish" data-piece="fish" aria-label="点击鱼缸"><span>小鱼小鱼快快游</span></button>
+    </div>
+  </main>
+  <div class="modal-backdrop" id="modal" aria-hidden="true">
+    <div class="modal-scene" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="modal-close" id="closeBtn" aria-label="关闭">×</button>
+      <article class="modal-paper">
+        <div class="paper-top">
+          <div class="modal-mark" id="modalMark">01</div>
+          <div class="modal-kicker" id="modalKicker"></div>
+        </div>
+        <h1 id="modalTitle"></h1>
+        <div class="modal-body" id="modalBody"></div>
+        <div class="modal-actions" id="modalActions"></div>
+      </article>
+    </div>
+  </div>
+  <div class="toast" id="toast">今天也有在往前游。</div>
+  <script src="script.js"></script>
+</body>
+</html>
